@@ -1,0 +1,17 @@
+ent1 = input('Enter text to write to the file: ')
+file = open('output.text','w')
+edf = file.write(ent1)
+print('Data written successfully to output.txt file')
+file.close()
+
+ent2 = input('Enter additional text to append: ')
+file = open('output.text','a')
+apf = file.write(ent2)
+print('Data successfully appended')
+print('Final content of output.txt :')
+file.close()
+
+file = open('output.text','r')
+rf = file.read()
+print(rf)
+file.close()
